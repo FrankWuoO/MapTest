@@ -16,6 +16,10 @@
 		D5A4E4411D38756F0079C80A /* MapTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4E4401D38756F0079C80A /* MapTestTests.m */; };
 		D5A4E4561D38802E0079C80A /* FWAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4E4551D38802E0079C80A /* FWAnnotation.m */; };
 		D5A4E4591D3881500079C80A /* FWAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4E4581D3881500079C80A /* FWAnnotationView.m */; };
+		D5A4E4741D38903F0079C80A /* Birthday.png in Resources */ = {isa = PBXBuildFile; fileRef = D5A4E4701D38903F0079C80A /* Birthday.png */; };
+		D5A4E4751D38903F0079C80A /* Butterfly.png in Resources */ = {isa = PBXBuildFile; fileRef = D5A4E4711D38903F0079C80A /* Butterfly.png */; };
+		D5A4E4761D38903F0079C80A /* ClownFish.png in Resources */ = {isa = PBXBuildFile; fileRef = D5A4E4721D38903F0079C80A /* ClownFish.png */; };
+		D5A4E4771D38903F0079C80A /* Pig.png in Resources */ = {isa = PBXBuildFile; fileRef = D5A4E4731D38903F0079C80A /* Pig.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		D5A4E4551D38802E0079C80A /* FWAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FWAnnotation.m; path = FWAnnotation/FWAnnotation.m; sourceTree = "<group>"; };
 		D5A4E4571D3881500079C80A /* FWAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FWAnnotationView.h; path = FWAnnotationView/FWAnnotationView.h; sourceTree = "<group>"; };
 		D5A4E4581D3881500079C80A /* FWAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FWAnnotationView.m; path = FWAnnotationView/FWAnnotationView.m; sourceTree = "<group>"; };
+		D5A4E4701D38903F0079C80A /* Birthday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Birthday.png; sourceTree = "<group>"; };
+		D5A4E4711D38903F0079C80A /* Butterfly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Butterfly.png; sourceTree = "<group>"; };
+		D5A4E4721D38903F0079C80A /* ClownFish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClownFish.png; sourceTree = "<group>"; };
+		D5A4E4731D38903F0079C80A /* Pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pig.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 		D5A4E4251D38756F0079C80A /* MapTest */ = {
 			isa = PBXGroup;
 			children = (
+				D5A4E46E1D38903F0079C80A /* Resource */,
 				D5A4E44D1D387AF90079C80A /* FWAnnotation */,
 				D5A4E44B1D387ACA0079C80A /* FWAnnotationView */,
 				D5A4E4291D38756F0079C80A /* AppDelegate.h */,
@@ -135,6 +144,25 @@
 				D5A4E4551D38802E0079C80A /* FWAnnotation.m */,
 			);
 			name = FWAnnotation;
+			sourceTree = "<group>";
+		};
+		D5A4E46E1D38903F0079C80A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4E46F1D38903F0079C80A /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D5A4E46F1D38903F0079C80A /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D5A4E4701D38903F0079C80A /* Birthday.png */,
+				D5A4E4711D38903F0079C80A /* Butterfly.png */,
+				D5A4E4721D38903F0079C80A /* ClownFish.png */,
+				D5A4E4731D38903F0079C80A /* Pig.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +246,11 @@
 			files = (
 				D5A4E4361D38756F0079C80A /* LaunchScreen.storyboard in Resources */,
 				D5A4E4331D38756F0079C80A /* Assets.xcassets in Resources */,
+				D5A4E4741D38903F0079C80A /* Birthday.png in Resources */,
 				D5A4E4311D38756F0079C80A /* Main.storyboard in Resources */,
+				D5A4E4751D38903F0079C80A /* Butterfly.png in Resources */,
+				D5A4E4771D38903F0079C80A /* Pig.png in Resources */,
+				D5A4E4761D38903F0079C80A /* ClownFish.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
