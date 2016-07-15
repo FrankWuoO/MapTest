@@ -21,7 +21,6 @@
 }
 
 -(void)setAnnotation:(id<MKAnnotation>)annotation{
-    NSLog(@"Set annotation");
     FWAnnotation *kAnnotation = annotation;
     self.image = kAnnotation.image;
     _annotation = annotation;

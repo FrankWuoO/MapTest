@@ -30,7 +30,7 @@
     [self initLayout];
     
     [self TESTData];//產生測試資料
-    [_appleMap addAnnotations:_annotationsArray];
+    [_appleMap addAnnotations:_annotationsArray];//把資料輸入進地圖
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -46,19 +46,16 @@
                     [UIImage imageNamed:@"ClownFish"],
                     [UIImage imageNamed:@"Pig"]
                     ];
-    
-    
-    
 }
 
 -(void)initLayout{
     _appleMap = [[MKMapView alloc]initWithFrame:self.view.frame];
     _appleMap.delegate = self;
+    
     CLLocationCoordinate2D ground = CLLocationCoordinate2DMake(25.033474, 121.564588);
     MKMapCamera *myCamera = [MKMapCamera cameraLookingAtCenterCoordinate:ground fromDistance:500 pitch:0 heading:0];
     _appleMap.camera = myCamera;
     [self.view addSubview:_appleMap];
-
 }
 
 -(void)TESTData{
