@@ -12,8 +12,12 @@
 @interface FWAnnotation : NSObject <MKAnnotation>
 
 @property (nonatomic,readwrite)CLLocationCoordinate2D coordinate;
+@property (nonatomic,copy) NSString *title;
 @property (nonatomic,copy) UIImage *image;
+@property (nonatomic)NSNumber *angle;
 
-- (instancetype)initWithCoordinate:(CLLocationCoordinate2D )newCoordinate andImage:(UIImage *)image
-;
+
+- (instancetype)initWithTitle:(NSString *)title
+                   coordinate:(CLLocationCoordinate2D )newCoordinate
+                     thumbnail:(UIImage *)image;
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D54363951D5C0F4500CF1F1C /* FWAnnotationCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D54363941D5C0F4500CF1F1C /* FWAnnotationCalloutView.m */; };
+		D54363971D5C10A600CF1F1C /* FWAnnotationCalloutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D54363961D5C10A600CF1F1C /* FWAnnotationCalloutView.xib */; };
 		D5A4E4281D38756F0079C80A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4E4271D38756F0079C80A /* main.m */; };
 		D5A4E42B1D38756F0079C80A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4E42A1D38756F0079C80A /* AppDelegate.m */; };
 		D5A4E42E1D38756F0079C80A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A4E42D1D38756F0079C80A /* ViewController.m */; };
@@ -33,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D54363931D5C0F4500CF1F1C /* FWAnnotationCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FWAnnotationCalloutView.h; path = FWAnnotationCalloutView/FWAnnotationCalloutView.h; sourceTree = "<group>"; };
+		D54363941D5C0F4500CF1F1C /* FWAnnotationCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FWAnnotationCalloutView.m; path = FWAnnotationCalloutView/FWAnnotationCalloutView.m; sourceTree = "<group>"; };
+		D54363961D5C10A600CF1F1C /* FWAnnotationCalloutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FWAnnotationCalloutView.xib; path = FWAnnotationCalloutView/FWAnnotationCalloutView.xib; sourceTree = "<group>"; };
 		D5A4E4231D38756F0079C80A /* MapTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5A4E4271D38756F0079C80A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D5A4E4291D38756F0079C80A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,6 +79,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D54363921D5C0E4700CF1F1C /* FWAnnotationCalloutView */ = {
+			isa = PBXGroup;
+			children = (
+				D54363931D5C0F4500CF1F1C /* FWAnnotationCalloutView.h */,
+				D54363941D5C0F4500CF1F1C /* FWAnnotationCalloutView.m */,
+				D54363961D5C10A600CF1F1C /* FWAnnotationCalloutView.xib */,
+			);
+			name = FWAnnotationCalloutView;
+			sourceTree = "<group>";
+		};
 		D5A4E41A1D38756F0079C80A = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				D5A4E46E1D38903F0079C80A /* Resource */,
+				D54363921D5C0E4700CF1F1C /* FWAnnotationCalloutView */,
 				D5A4E44D1D387AF90079C80A /* FWAnnotation */,
 				D5A4E44B1D387ACA0079C80A /* FWAnnotationView */,
 				D5A4E4291D38756F0079C80A /* AppDelegate.h */,
@@ -247,6 +263,7 @@
 				D5A4E4361D38756F0079C80A /* LaunchScreen.storyboard in Resources */,
 				D5A4E4331D38756F0079C80A /* Assets.xcassets in Resources */,
 				D5A4E4741D38903F0079C80A /* Birthday.png in Resources */,
+				D54363971D5C10A600CF1F1C /* FWAnnotationCalloutView.xib in Resources */,
 				D5A4E4311D38756F0079C80A /* Main.storyboard in Resources */,
 				D5A4E4751D38903F0079C80A /* Butterfly.png in Resources */,
 				D5A4E4771D38903F0079C80A /* Pig.png in Resources */,
@@ -271,6 +288,7 @@
 				D5A4E4591D3881500079C80A /* FWAnnotationView.m in Sources */,
 				D5A4E42E1D38756F0079C80A /* ViewController.m in Sources */,
 				D5A4E42B1D38756F0079C80A /* AppDelegate.m in Sources */,
+				D54363951D5C0F4500CF1F1C /* FWAnnotationCalloutView.m in Sources */,
 				D5A4E4561D38802E0079C80A /* FWAnnotation.m in Sources */,
 				D5A4E4281D38756F0079C80A /* main.m in Sources */,
 			);
@@ -402,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MapTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com..MapTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MapTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -413,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MapTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com..MapTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MapTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

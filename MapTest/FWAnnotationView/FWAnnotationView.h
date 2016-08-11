@@ -7,7 +7,6 @@
 //
 
 #import <MapKit/MapKit.h>
-
 @interface FWAnnotationView : MKAnnotationView
 
 @end

@@ -9,12 +9,16 @@
 #import "FWAnnotation.h"
 
 @implementation FWAnnotation
-- (instancetype)initWithCoordinate:(CLLocationCoordinate2D )newCoordinate andImage:(UIImage *)image
+- (instancetype)initWithTitle:(NSString *)title
+                   coordinate:(CLLocationCoordinate2D)newCoordinate
+                    thumbnail:(UIImage *)image
 {
     self = [super init];
     if (self) {
+        _title = title;
         _coordinate = newCoordinate;
         _image = image;
+        _angle = @(0.0);
     }
     return self;
 }
